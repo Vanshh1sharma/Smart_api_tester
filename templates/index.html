@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart API Tester</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Smart API Tester</h1>
+    <p class="subtitle">Beginner-friendly API testing with clear explanations</p>
+
+    <form method="POST">
+
+        <div class="section">
+            <div class="section-title">Request</div>
+
+            <label>API URL</label>
+            <input type="text" name="url"
+                   placeholder="https://jsonplaceholder.typicode.com/posts/1"
+                   required>
+
+            <label>Method</label>
+            <select name="method">
+                <option value="GET">GET</option>
+                <option value="POST">POST</option>
+            </select>
+
+            <label>JSON Body (POST only)</label>
+            <textarea name="body"
+                      placeholder='{"title": "hello", "body": "test", "userId": 1}'></textarea>
+
+            <button type="submit">Send Request</button>
+        </div>
+
+    </form>
+
+    {% if error %}
+        <div class="error">{{ error }}</div>
+    {% endif %}
+
+    {% if result %}
+        <div class="section result">
+            <div class="section-title">Response</div>
+
+            <div class="meta">
+                <span>Status: {{ result.status }}</span>
+                <span>Time: {{ result.time }}s</span>
+            </div>
+
+            <p><strong>Explanation:</strong> {{ result.explanation }}</p>
+
+            <pre>{{ result.response }}</pre>
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
