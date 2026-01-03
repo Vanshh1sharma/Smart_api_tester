@@ -61,8 +61,11 @@ http://127.0.0.1:5000
 GET Requests :
 
 https://jsonplaceholder.typicode.com/posts/1
+
 https://dog.ceo/api/breeds/image/random
+
 https://randomuser.me/api/
+
 https://official-joke-api.appspot.com/random_joke
 
 
