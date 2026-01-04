@@ -4,7 +4,7 @@ Smart API Tester is a beginner-friendly web application that helps users test AP
 
 When learning APIs, many students find tools like Postman overwhelming. They show too many options and technical terms without clearly explaining what went wrong when a request fails. This project was built to make API testing easier to understand by focusing on clarity instead of complexity.
 
----
+
 
 ## 🚀 Features
 
@@ -14,7 +14,7 @@ When learning APIs, many students find tools like Postman overwhelming. They sho
 - Measure how long each request takes  
 - Handle common errors like invalid URLs, bad JSON, or timeouts  
 
----
+
 
 ## 🛠️ Tech Stack
 
@@ -24,7 +24,7 @@ When learning APIs, many students find tools like Postman overwhelming. They sho
 - HTML  
 - CSS  
 
----
+
 
 ## 📁 Project Structure
 
@@ -36,10 +36,7 @@ smart_api_tester/
 └── static/
 └── style.css
 
-yaml
-Copy code
 
----
 
 ## ▶️ How to Run Locally
 
